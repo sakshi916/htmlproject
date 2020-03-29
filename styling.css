@@ -2,13 +2,23 @@
  
  .form{width:50%;}
 
+.top-wrapper{ width:50%; }
+.container{ width:50%; }
+#containers{width:50%;font-size:25px;}
 }
+
 
 @media(max-width:670px){
   
 .form{
     width:100%;
   }
+.container{ width:100%;}
+.top-wrapper{ width:100%; }
+#containers{font-size:15px; width:100%;}
+}
+*{
+box-sizing:border-box;
 }
 .container h1{
 font-size:40px;
@@ -18,16 +28,20 @@ color: #000;
 float:left;
 padding:0px 40px ;
 }
+
+
 .container h1:hover{
 color : #fff;
 cursor:pointer;
 }
-.container{
 
+
+.container{
 background-color:#ff3040;
 height:90px;
 width:100%;
 }
+
 
 body{
 background-color:#fff;
@@ -49,32 +63,36 @@ display:block;
 text-decoration:none;
 color:black;
 }
-
+@media(min-width:1000px){
+.form{padding: 70px 300px;}
+#containers{
+font-size:40px;
+padding: 70px 300px; }
+.container li{
+padding: 40px 15px 20px 15px;}
+}
 .form{
  background-image: url(bg2.jpg);
   background-size: 100% 100%;
   color: white;
   
-padding: 70px 300px;
+
 }
 
 #containers {
  
 background-image: url(Womanquiz.jpg);
   background-size: 100% 100%;
-  color: black;
+color: black;
   font-weight:bold;
-font-size:40px;
-padding: 70px 300px; 
-height:560px;
 text-align:center;
 
 }
 .container li{
-padding: 40px 15px 20px 15px;
 list-style:none;
 float:right;
 }
+
 li{
 list-style:none;
 }
